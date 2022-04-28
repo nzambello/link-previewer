@@ -42,9 +42,12 @@
   "homepage": "https://github.com/nzambello/link-previewer",
   "keywords": [
     "node",
+    "nodejs",
     "opengraph",
+    "opengraph-tags",
+    "og-tags",
+    "link-preview",
     "preview",
-    "meta",
     "previewer"
   ],
   "module": "dist/link-previewer.esm.js",
