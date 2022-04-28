@@ -8,7 +8,7 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "start": "tsdx watch",
@@ -34,6 +34,7 @@
   },
   "name": "link-previewer",
   "author": "nzambello",
+  "description": "Node util to retrieve preview info from a link (og tags, meta tags, images, videos)",
   "repository": {
     "type": "git",
     "url": "https://github.com/nzambello/link-previewer.git"
