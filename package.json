@@ -16,7 +16,7 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "typecheck": "tsc -b",
-    "prepare": "tsdx build",
+    "prepare": "tsdx build; is-ci || husky install",
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
@@ -34,6 +34,18 @@
   },
   "name": "link-previewer",
   "author": "nzambello",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzambello/link-previewer.git"
+  },
+  "homepage": "https://github.com/nzambello/link-previewer",
+  "keywords": [
+    "node",
+    "opengraph",
+    "preview",
+    "meta",
+    "previewer"
+  ],
   "module": "dist/link-previewer.esm.js",
   "size-limit": [
     {
@@ -45,10 +57,54 @@
       "limit": "10 KB"
     }
   ],
+  "release-it": {
+    "git": {
+      "tagName": "v${version}",
+      "commitMessage": "chore: release v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true,
+      "releaseName": "${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "refactor",
+              "section": "Changes"
+            },
+            {
+              "type": "chore",
+              "section": "Maintenance"
+            }
+          ]
+        }
+      }
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "16.2.4",
+    "@commitlint/config-conventional": "16.2.4",
+    "@release-it/conventional-changelog": "4.3.0",
     "@size-limit/preset-small-lib": "7.0.8",
     "@types/cheerio": "0.22.31",
     "husky": "7.0.4",
+    "is-ci": "3.0.1",
+    "release-it": "14.14.2",
     "size-limit": "7.0.8",
     "tsdx": "0.14.1",
     "tslib": "2.4.0",
