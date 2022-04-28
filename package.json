@@ -32,7 +32,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "link-previewer",
+  "name": "@nzambello/link-previewer",
   "author": "nzambello",
   "description": "Node util to retrieve preview info from a link (og tags, meta tags, images, videos)",
   "repository": {

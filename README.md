@@ -1,6 +1,6 @@
 # link-previewer
 
-[![npm version](https://img.shields.io/github/package-json/v/nzambello/link-previewer)](https://www.npmjs.com/package/link-previewer)
+[![npm version](https://img.shields.io/github/package-json/v/nzambello/link-previewer)](https://www.npmjs.com/package/@nzambello/link-previewer)
 ![Tests](https://github.com/nzambello/link-previewer/workflows/CI/badge.svg?branch=main)
 ![TypeScript Support](https://img.shields.io/badge/TypeScript-Support-blue)
 
@@ -9,17 +9,17 @@ Node util to retrieve preview info from a link (og tags, meta tags, images, vide
 ## Installation
 
 ```bash
-yarn add link-previewer
+yarn add @nzambello/link-previewer
 ```
 
 ```bash
-npm install link-previewer
+npm install @nzambello/link-previewer
 ```
 
 ## Usage
 
 ```ts
-import getLinkPreview from 'link-previewer';
+import getLinkPreview from '@nzambello/link-previewer';
 
 getLinkPreview('https://www.youtube.com/watch?v=feH26j3rBz8').then(console.log);
 ```
