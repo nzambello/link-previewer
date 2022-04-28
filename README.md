@@ -19,6 +19,7 @@ npm install @nzambello/link-previewer
 ## Usage
 
 ```ts
+import type { ILinkPreviewInfo } from '@nzambello/link-previewer';
 import getLinkPreview from '@nzambello/link-previewer';
 
 getLinkPreview('https://www.youtube.com/watch?v=feH26j3rBz8').then(console.log);
