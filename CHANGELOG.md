@@ -1,5 +1,12 @@
 
 
+### [1.0.1](https://github.com/nzambello/link-previewer/compare/v1.0.0...v1.0.1) (2022-04-28)
+
+
+### Maintenance
+
+* update package name ([01e5871](https://github.com/nzambello/link-previewer/commit/01e58713f68f261e0fb1c0b0fd44243ab696dce2))
+
 ## 1.0.0 (2022-04-28)
 
 
