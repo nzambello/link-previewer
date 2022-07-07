@@ -93,7 +93,7 @@ const getLinkPreview = async (url: string, options?: ILinkPreviewerOptions) => {
       : ('error' as 'error'),
   };
 
-  const response = await fetch(fetchUrl, fetchOptions).catch((e) => {
+  const response = await fetch(fetchUrl, fetchOptions).catch(e => {
     if (e.name === 'AbortError') {
       throw new Error('Request timeout');
     }
