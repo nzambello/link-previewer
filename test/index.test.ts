@@ -3,7 +3,7 @@ import getLinkPreview, { ILinkPreviewInfo } from '../src';
 const youtubeSample: ILinkPreviewInfo = {
   description:
     'How much do we know about the impact of technologies we use everyday? How much the web industry is responsible for carbon emissions? Can we define an ethic d...',
-  favicon: 'https://www.youtube.com/s/desktop/1422277c/img/favicon.ico',
+  favicon: 'https://www.youtube.com/s/desktop/97650662/img/favicon.ico',
   image: 'https://i.ytimg.com/vi/feH26j3rBz8/maxresdefault.jpg',
   imageHeight: 720,
   imageWidth: 1280,
