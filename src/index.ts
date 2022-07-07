@@ -31,6 +31,7 @@ const getMeta = ($: cheerio.Root, metaName: string) => {
 const parseUrl = (url?: string, baseUrl?: string) => {
   if (!url) return undefined;
   if (!baseUrl || url.startsWith('http')) return url;
+  if (url.startsWith('//')) return `https:${url}`;
 
   return `${baseUrl}${url}`;
 };
@@ -92,7 +93,7 @@ const getLinkPreview = async (url: string, options?: ILinkPreviewerOptions) => {
       : ('error' as 'error'),
   };
 
-  const response = await fetch(fetchUrl, fetchOptions).catch(e => {
+  const response = await fetch(fetchUrl, fetchOptions).catch((e) => {
     if (e.name === 'AbortError') {
       throw new Error('Request timeout');
     }
