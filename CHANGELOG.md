@@ -1,5 +1,17 @@
 
 
+## [1.1.0](https://github.com/nzambello/link-previewer/compare/v1.0.1...v1.1.0) (2022-07-07)
+
+
+### Features
+
+* handle links with no protocol from wikipedia ([9196390](https://github.com/nzambello/link-previewer/commit/9196390a186e50bf5d61415de995f23066258fe4))
+
+
+### Maintenance
+
+* add access public to publish config in package.json ([6cfe4df](https://github.com/nzambello/link-previewer/commit/6cfe4df5d5307daf7830f0fb5e2080e382f3aacd))
+
 ### [1.0.1](https://github.com/nzambello/link-previewer/compare/v1.0.0...v1.0.1) (2022-04-28)
 
 
